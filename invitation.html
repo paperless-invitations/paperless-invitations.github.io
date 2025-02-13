@@ -23,6 +23,14 @@
             color: white;
         }
 
+       @media screen and (max-aspect-ratio: 1/1) {
+           .section {
+                left: 0px !important;
+                width: 100% !important;
+            }
+        }
+
+
         .section {
             margin: 0px;
             padding: 0px;
@@ -31,7 +39,11 @@
             width: 50vh;
             height: 90vh;
 
-        }
+         }
+
+ 
+
+       
         .section-1 {
             top: 0px;
             background: #b5deff;
@@ -173,7 +185,7 @@
         .text-where-button {
             position: relative;
             top: calc(20vh);
-            left: 10vh;
+            text-align: center;
         }
 
         .css-button {
