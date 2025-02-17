@@ -10,12 +10,15 @@
     <meta property="og:description" content="Invitación al Baby Shower">
     <meta name="description" content="Invitación al Baby Shower">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <style>
 
         body {
             margin: 0px;
             padding: 0px;
-            font-family: 'Arial';
+            font-family: "Dancing Script", serif;
             background-color: #b5deff;
         }
         a {
@@ -47,6 +50,9 @@
         .section-1 {
             top: 0px;
             background: #b5deff;
+            background-image: url('clouds.gif');
+            background-size: contain;
+            background-repeat: repeat-x;
         }
         .section-2 {
             top: 90vh;
@@ -61,32 +67,35 @@
 
 
         .text-tittle {
-            font-size: 8vh;
-            color: white;
+            font-size: 5vh;
+            color: #6d6d6d;
             position: absolute;
-            top: calc(27vh);
+            top: calc(35vh);
             width: 100%;
-            text-shadow: 1px 1px 2px #868686;
-            font-family: cursive;
+            text-shadow: 1px 1px 2px #ffffff;
+            font-family: "Dancing Script", serif;
             text-align: center;
+            z-index: 1;
         }
 
         .text-sub-tittle {
             font-size: 3vh;
-            color: white;
+            color: #6d6d6d;
             position: absolute;
             top: calc(23vh);
             width: 100%;
-            text-shadow: 2px 1px 2px #494949;
-            font-family: arial;
+            text-shadow: 1px 1px 2px #ffffff;
+            font-family: "Dancing Script", serif;;
             text-align: center;
+            padding: 1vh;
         }
          .welcome-gif {
             position: relative;
-            top: calc(35vh);
+            top: calc(40vh);
             left: 0px;
             width: 100%;
             height: auto;
+            z-index: 0;
         }
         #dino01 {
             position: absolute;
@@ -115,7 +124,7 @@
             top: calc(-3vh);
             width: 100%;
             text-shadow: 1px 1px 2px #868686;
-            font-family: cursive;
+            font-family: "Dancing Script", serif;;
             text-align: center;
         }
         .text-when {
@@ -125,7 +134,7 @@
             top: calc(20vh);
             width: 100%;
             text-shadow: 2px 2px 2px #868686;
-            font-family: arial;
+            font-family: "Dancing Script", serif;
             text-align: center;
         }
           #dino04 {
@@ -169,7 +178,7 @@
             top: calc(-3vh);
             width: 100%;
             text-shadow: 1px 1px 2px #868686;
-            font-family: cursive;
+            font-family: "Dancing Script", serif;;
             text-align: center;
         }
         .text-where {
@@ -179,7 +188,7 @@
             top: calc(20vh);
             width: 100%;
             text-shadow: 1px 1px 2px #868686;
-            font-family: arial;
+            font-family: "Dancing Script", serif;
             text-align: center;
         }
         .text-where-button {
@@ -199,7 +208,7 @@
             cursor: pointer;
             position: relative;
             overflow: hidden;
-            font-family: Arial;
+            font-family: "Dancing Script", serif;
             background: linear-gradient(180deg, #fa685a 10%, #d34639 100%);
             display: inline-flex;
             align-items: center;
@@ -242,7 +251,7 @@
 
 
     <div class="section-1 section">
-        <p class="text-sub-tittle" >Por fin esta hermosa espera está por terminar Isabel e Isaac Quieren Invitarte a celebrar el </p>
+        <p class="text-sub-tittle" >Por fin esta hermosa espera está por terminar.<br>Isabel e Isaac Quieren Invitarte a celebrar el </p>
         <p class="text-tittle">Baby Shower</p>
 
         <img src="hatch-01.gif" class="welcome-gif">
@@ -252,7 +261,7 @@
     </div>
     <div class="section-2 section">
         <p class="text-when-tittle">¿Cuando?</p>
-        <p class="text-when">El sabado 15 de marzo del 2025 a las 16:00 hrs</p>
+        <p class="text-when">El sábado 15 de marzo del 2025 a las 16:00 hrs</p>
         <img src="dino-04.gif" id="dino04">
         <img src="dino-05.gif" id="dino05">
         <img src="dino-03.gif" id="dino06">
