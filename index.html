@@ -249,16 +249,52 @@
             -webkit-transform: scale(-1, 1);
             transform: scale(-1, 1);
         }
+
     </style>
+    <script type="application/javascript">
+        function animateText(list, id) {
+            var element = document.getElementById(id);
+            if (!element) {
+                console.error('Elemento no encontrado');
+                return;
+            }
+            
+            var index = 0;
+            var interval = setInterval(function() {
+                if (index < list.length) {
+                    element.innerHTML += list[index];
+                    index++;
+                } else {
+                    clearInterval(interval);
+                }
+            }, 65);
+        }
+
+        window.addEventListener("load", (event) => {
+           try{
+                var list = 'Por fin esta hermosa espera está por terminar.'.split('');
+               list.push('<br>')
+               list=list.concat('Isabel e Isaac quieren Invitarte a celebrar el'.split(''))  
+               list.push('<br><span class="text-tittle">Baby Shower</span>')
+               animateText(list, 'txt1');
+           } catch (ex) {
+                document.getElementById('txt1').innerHTML = 'Por fin esta hermosa espera está por terminar.<br>Isabel e Isaac quieren Invitarte a celebrar el<br><span class="text-tittle">Baby Shower</span>';
+           }
+
+
+        });
+        // Por fin esta hermosa espera está por terminar.<br>Isabel e Isaac Quieren Invitarte a celebrar el
+        //<br>
+        //<span class="text-tittle">Baby Shower</span>
+    </script>
 
 </head>
 <body>
 
 
     <div class="section-1 section">
-        <p class="text-sub-tittle" >Por fin esta hermosa espera está por terminar.<br>Isabel e Isaac Quieren Invitarte a celebrar el
-            <br>
-            <span class="text-tittle">Baby Shower</span>
+        <p class="text-sub-tittle" id="txt1">
+            
         </p>
         
 
